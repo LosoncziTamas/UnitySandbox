@@ -13,6 +13,7 @@
         </e>
         <e p="Singleton" t="Include">
           <e p="ResourceWithLifecycle.cs" t="Include" />
+          <e p="SingleSceneSingletonBehaviour.cs" t="Include" />
           <e p="Singleton.cs" t="Include" />
           <e p="SingletonClient.cs" t="Include" />
         </e>
@@ -21,7 +22,9 @@
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
       <e p="Sandbox.sln" t="IncludeFlat" />
-      <e p="Temp/bin" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
     </e>
   </component>
 </project>
