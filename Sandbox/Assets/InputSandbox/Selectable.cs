@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Input
+namespace InputSandbox
 {
     public class Selectable : MonoBehaviour
     {

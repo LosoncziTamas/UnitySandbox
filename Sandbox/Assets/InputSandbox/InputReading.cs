@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Input
+namespace InputSandbox
 {
     public class InputReading : MonoBehaviour
     {
@@ -48,15 +48,15 @@ namespace Input
         {
             var result = new InputState();
         
-            if (Application.isMobilePlatform && UnityEngine.Input.touchCount > 0)
+            if (Application.isMobilePlatform && Input.touchCount > 0)
             {
                 result.mainButtonDown = true;
-                result.screenPosition = UnityEngine.Input.GetTouch(0).position;
+                result.screenPosition = Input.GetTouch(0).position;
             }
-            else if (UnityEngine.Input.GetMouseButtonDown(0))
+            else if (Input.GetMouseButtonDown(0))
             {
                 result.mainButtonDown = true;
-                result.screenPosition = new Vector2(UnityEngine.Input.mousePosition.x, UnityEngine.Input.mousePosition.y);
+                result.screenPosition = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
             }
 
             return result;
