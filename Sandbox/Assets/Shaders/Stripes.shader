@@ -3,8 +3,7 @@ Shader "Holistic/Stripes"
     Properties 
     {
         _diffuseTex ("Diffuse Texture", 2D) = "white" {}
-        _rimColor ("Rim Color", Color) = (0, 0.5, 0.5, 0)
-        _stripeSize ("Stripe Size", Range(1,20)) = 1
+        _stripeSize ("Stripe Size", Range(0, 1)) = 1
     }
     
     SubShader
@@ -27,8 +26,8 @@ Shader "Holistic/Stripes"
             void surf(Input IN, inout SurfaceOutput o)
             {
                 float rim = 1 - saturate(dot(IN.viewDir, o.Normal));
-                float3 stripeColor = _rimColor;
-                if (frac(IN.worldPos.y * (20 - _stripeSize)  * 0.5) > 0.4)
+                float3 stripeColor = (0, 0, 0);
+                if (frac(IN.worldPos.y * 0.5 * (1 - _stripeSize)) > 0.4)
                 {
                     stripeColor.g = rim;
                 }

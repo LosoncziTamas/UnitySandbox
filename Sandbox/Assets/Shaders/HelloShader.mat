@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: HelloShader
-  m_Shader: {fileID: 4800000, guid: 20f98376ab0e4066967d64b04ba3bf05, type: 3}
+  m_Shader: {fileID: 4800000, guid: 78d31fa95e854681b5aab4367eab6446, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -40,7 +40,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 640ffc687b61a4342ade0819385d32ea, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -55,6 +55,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Texture:
+        m_Texture: {fileID: 2800000, guid: adda021c21e3a41a08a0d1d4eb3a41fb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _bumpTex:
         m_Texture: {fileID: 2800000, guid: 99a1984e7964a4da894b90062ae597d3, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -64,7 +68,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _diffuseTex:
-        m_Texture: {fileID: 2800000, guid: 0389fa222681b485ba385a5137e41419, type: 3}
+        m_Texture: {fileID: 2800000, guid: 640ffc687b61a4342ade0819385d32ea, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _emissiveTex:
@@ -108,9 +112,11 @@ Material:
     - _MySliderValue: 10
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _RimPower: 3
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
+    - _StripeWidth: 10
     - _UVSec: 0
     - _ZWrite: 1
     - _brightness: 0
@@ -125,14 +131,15 @@ Material:
     - _myZ: 0
     - _rimPower: 0
     - _slider: 3.8
-    - _stripeSize: 11.44
+    - _stripeSize: 0.947
     m_Colors:
     - _AmbientColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 0.091, g: 0, b: 0.68275833, a: 1}
+    - _Color: {r: 0.44705883, g: 0.44705883, b: 0.44705883, a: 0.44705883}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _RimColor: {r: 1, g: 0, b: 0, a: 0}
     - _myColor: {r: 1, g: 1, b: 1, a: 1}
     - _myColour: {r: 0.7924528, g: 0.3476326, b: 0.3476326, a: 1}
     - _myEmission: {r: 1, g: 0, b: 0, a: 1}
     - _myNormal: {r: 0, g: 1, b: 1, a: 1}
     - _myVector: {r: 0.5, g: 1, b: 1, a: 1}
-    - _rimColor: {r: 0, g: 1, b: 0.055066347, a: 0}
+    - _rimColor: {r: 0, g: 0, b: 0, a: 0}

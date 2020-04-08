@@ -42,11 +42,14 @@
           <e p="LoadSceneTest.cs" t="Include" />
         </e>
         <e p="Shaders" t="Include">
+          <e p="BasicLambert.shader" t="Include" />
+          <e p="BasicPhong.shader" t="Include" />
           <e p="BumpDiffuse.shader" t="Include" />
           <e p="BumpedEnvironment.shader" t="Include" />
           <e p="BumpedEnvironmentChallenge.shader" t="Include" />
           <e p="DotProduct.shader" t="Include" />
           <e p="HelloShader.shader" t="Include" />
+          <e p="Hologram.shader" t="Include" />
           <e p="NormalPlay.shader" t="Include" />
           <e p="PropertiesChallenge1.shader" t="Include" />
           <e p="PropertiesChallenge2.shader" t="Include" />
@@ -54,7 +57,12 @@
           <e p="PropertiesChallenge4.shader" t="Include" />
           <e p="Rim.shader" t="Include" />
           <e p="ShowNormals.cs" t="Include" />
+          <e p="StandardPBR.shader" t="Include" />
+          <e p="StandardSpecPBR.shader" t="Include" />
           <e p="Stripes.shader" t="Include" />
+          <e p="ToonShader.shader" t="Include" />
+          <e p="Transparent.shader" t="Include" />
+          <e p="TwoSide.shader" t="Include" />
         </e>
         <e p="Singleton" t="Include">
           <e p="MultiSceneSingletonBehaviour.cs" t="Include" />
