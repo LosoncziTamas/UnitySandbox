@@ -64,7 +64,15 @@
           <e p="ToonShader.shader" t="Include" />
           <e p="Transparent.shader" t="Include" />
           <e p="TwoSide.shader" t="Include" />
+          <e p="VF" t="Include">
+            <e p="FirstUnlit.shader" t="Include" />
+            <e p="VFMat.shader" t="Include" />
+          </e>
           <e p="Wall.shader" t="Include" />
+          <e p="Window" t="Include">
+            <e p="BumpedDiffuseStencil.shader" t="Include" />
+            <e p="WindowStencil.shader" t="Include" />
+          </e>
         </e>
         <e p="Singleton" t="Include">
           <e p="MultiSceneSingletonBehaviour.cs" t="Include" />
