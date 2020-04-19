@@ -66,6 +66,7 @@
           <e p="TwoSide.shader" t="Include" />
           <e p="VF" t="Include">
             <e p="FirstUnlit.shader" t="Include" />
+            <e p="VFLight.shader" t="Include" />
             <e p="VFMat.shader" t="Include" />
           </e>
           <e p="Wall.shader" t="Include" />
