@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Mat1
-  m_Shader: {fileID: 4800000, guid: ed8c08ddfd1f4663a03f5c6ed363d882, type: 3}
+  m_Shader: {fileID: 4800000, guid: cf45ab5b3f8d45c1b0896194258a9844, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -63,6 +63,14 @@ Material:
         m_Texture: {fileID: 2800000, guid: a0cec8a16b83e45ddbfc60ea95cfaf4f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _myCube:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _myTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
     - _BumpScale: 1
     - _Cutoff: 0.5
@@ -83,9 +91,13 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     - _fadeLevel: 0.83
+    - _myFloat: 0.5
+    - _myRange: 1
     m_Colors:
     - _Color: {r: 0.5943396, g: 0.5943396, b: 0.5943396, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _LightColor0: {r: 0.9433962, g: 0.15574935, b: 0.15574935, a: 0}
     - _SpecColor: {r: 0.8666668, g: 0, b: 1, a: 1}
+    - _myColor: {r: 1, g: 1, b: 1, a: 1}
+    - _myVector: {r: 0.5, g: 1, b: 1, a: 1}
     - _rimColor: {r: 0, g: 0.5, b: 0.5, a: 0}

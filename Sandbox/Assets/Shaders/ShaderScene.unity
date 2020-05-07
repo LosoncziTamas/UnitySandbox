@@ -457,7 +457,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: e917983f8a1f34626b82fdec014e4c7b, type: 2}
+      objectReference: {fileID: 2100000, guid: 6df30149e818b438281cb9168b9529da, type: 2}
     - target: {fileID: -1114132889948492764, guid: 8d5d219e0922649ebad407ab0e56b446,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -472,6 +472,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -122.1
+      objectReference: {fileID: 0}
+    - target: {fileID: -1114132889948492764, guid: 8d5d219e0922649ebad407ab0e56b446,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -1114132889948492764, guid: 8d5d219e0922649ebad407ab0e56b446,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -1114132889948492764, guid: 8d5d219e0922649ebad407ab0e56b446,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -1114132889948492764, guid: 8d5d219e0922649ebad407ab0e56b446,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d5d219e0922649ebad407ab0e56b446, type: 3}
@@ -525,7 +545,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: e917983f8a1f34626b82fdec014e4c7b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -561,10 +581,10 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1989402204}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 115.7, y: -263.2, z: 43.1}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: -0.7071068, w: 0}
+  m_LocalPosition: {x: 121.2, y: -160, z: -63.2}
   m_LocalScale: {x: 10, y: 1, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 180, z: 0}

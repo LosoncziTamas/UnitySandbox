@@ -57,11 +57,13 @@ Shader "Holistic/OutlineAdvanced"
             {
                 v2f o;
                 o.pos = UnityObjectToClipPos(v.vertex);
-                // rotating normals from object into eye space.
+                // returning the normal in the form of world coordinate
                 float3 normal = normalize(mul((float3x3)UNITY_MATRIX_IT_MV, v.normal));
+                // taking it from the world and projecting it into the view
+                // gives a flat outline
                 float offset = TransformViewToProjection(normal.xy);
                 o.pos.xy += offset * o.pos.z * _Amount;
-                o.color.rgb = v.normal;
+                o.color = _OutlineCol;
                 return o;
             }
             
