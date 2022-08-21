@@ -2,90 +2,138 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe5a2214-42ee-49c0-aaf5-4b4a1e9b16b4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Sandbox/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sandbox/.idea/contentModel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Sandbox/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Sandbox/.idea/contentModel.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Sandbox/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sandbox/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Sandbox/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Sandbox/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sandbox/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/ShaderScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/ShaderScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/VF/VFLight.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/VF/VFLight.shader" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Sandbox/riderModule.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AudioSandbox.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AudioSandbox/AudioMixer.mixer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AudioSandbox/AudioMixer.mixer.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AudioSandbox/AudioScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AudioSandbox/AudioScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CameraSandbox.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CameraSandbox/CameraScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CameraSandbox/CameraScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeSandbox.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeSandbox/CodeScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeSandbox/CodeScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeSandbox/LoopTest.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeSandbox/LoopTest.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CommonScenarios.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CommonScenarios/CommonScenariosScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CommonScenarios/CommonScenariosScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CommonScenarios/MoveAround.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CommonScenarios/MoveAround.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CommonScenarios/MoveFromStartToEnd.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CommonScenarios/MoveFromStartToEnd.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CommonScenarios/Red.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CommonScenarios/Red.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DataManagement.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DataManagement/DataManagementScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DataManagement/DataManagementScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DataManagement/FilePersister.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DataManagement/FilePersister.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DataManagement/PlayerPrefsManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DataManagement/PlayerPrefsManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fundamentals.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fundamentals/DestroyChildren.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fundamentals/DestroyChildren.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fundamentals/FundamentalsScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fundamentals/FundamentalsScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fundamentals/InstantiateObject.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fundamentals/InstantiateObject.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fundamentals/LifeCyclePrefab.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fundamentals/LifeCyclePrefab.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fundamentals/LogMajorEvents.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fundamentals/LogMajorEvents.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InputSandbox.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InputSandbox/InputReading.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InputSandbox/InputReading.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InputSandbox/InputScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InputSandbox/InputScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InputSandbox/KeyInputRead.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InputSandbox/KeyInputRead.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InputSandbox/Selectable.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InputSandbox/Selectable.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LightsSandbox.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LightsSandbox/CubeMaterial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LightsSandbox/CubeMaterial.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LightsSandbox/LightTestScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LightsSandbox/LightTestScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Logging.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Logging/LoggingUtils.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Logging/LoggingUtils.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/lambert2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/lambert2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Particles.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Particles/ParticleSystemControllerWindow.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Particles/ParticleSystemControllerWindow.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Particles/ParticlesScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Particles/ParticlesScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PhysicsSandbox.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PhysicsSandbox/CollisionEventListener.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PhysicsSandbox/CollisionEventListener.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PhysicsSandbox/Cyan.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PhysicsSandbox/Cyan.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PhysicsSandbox/Magenta.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PhysicsSandbox/Magenta.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PhysicsSandbox/PhysicsScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PhysicsSandbox/PhysicsScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PhysicsSandbox/TriggerEventListener.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PhysicsSandbox/TriggerEventListener.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PhysicsSandbox/Yellow.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PhysicsSandbox/Yellow.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SceneManagement.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SceneManagement/LoadSceneTest.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SceneManagement/LoadSceneTest.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SceneManagement/SceneManagementScene.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SceneManagement/SceneManagementScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SceneManagement/SceneManagementScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SceneManagement/SceneManagementScene/LightingData.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SceneManagement/SceneManagementScene/LightingData.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SceneManagement/SceneManagementScene/ReflectionProbe-0.exr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SceneManagement/SceneManagementScene/ReflectionProbe-0.exr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Singleton.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Singleton/MultiSceneSingletonBehaviour.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Singleton/MultiSceneSingletonBehaviour.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Singleton/ResourceWithLifecycle.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Singleton/ResourceWithLifecycle.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Singleton/SingleSceneSingletonBehaviour.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Singleton/SingleSceneSingletonBehaviour.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Singleton/Singleton.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Singleton/Singleton.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Singleton/SingletonClient.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Singleton/SingletonClient.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Singleton/SingletonScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Singleton/SingletonScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Skybox.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Skybox/Cubemaps.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Skybox/Cubemaps/daytime.hdr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Skybox/Cubemaps/daytime.hdr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Skybox/Cubemaps/sunset.hdr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Skybox/Cubemaps/sunset.hdr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Skybox/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Skybox/Materials/Skybox_Daytime.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Skybox/Materials/Skybox_Daytime.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Skybox/Materials/Skybox_Sunset.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Skybox/Materials/Skybox_Sunset.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Skybox/Scene.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Skybox/Scene/mainScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Skybox/Scene/mainScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ThirdParty.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Assets/Shaders/VF/FirstUnlit.shader">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="60">
-                  <caret line="4" selection-start-line="4" selection-end-line="4" />
-                  <folding>
-                    <marker date="1587107448193" expanded="true" signature="29:978" ph="{...}" />
-                    <marker date="1587107448193" expanded="true" signature="50:58" ph="{...}" />
-                    <marker date="1587107448193" expanded="true" signature="77:976" ph="{...}" />
-                    <marker date="1587107448193" expanded="true" signature="101:970" ph="{...}" />
-                    <marker date="1587107448193" expanded="true" signature="124:955" ph="{...}" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Assets/Shaders/VF/VFMat.shader">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="239">
-                  <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-                  <folding>
-                    <marker date="1587114283356" expanded="true" signature="24:1615" ph="{...}" />
-                    <marker date="1587114283356" expanded="true" signature="45:199" ph="{...}" />
-                    <marker date="1587114283356" expanded="true" signature="223:1613" ph="{...}" />
-                    <marker date="1587114283356" expanded="true" signature="319:1607" ph="{...}" />
-                    <marker date="1587114283356" expanded="true" signature="342:1592" ph="{...}" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Assets/Shaders/VF/VFLight.shader">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="345">
-                  <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
-                  <folding>
-                    <marker date="1587290255993" expanded="true" signature="26:2558" ph="{...}" />
-                    <marker date="1587290255993" expanded="true" signature="47:108" ph="{...}" />
-                    <marker date="1587290255993" expanded="true" signature="132:2556" ph="{...}" />
-                    <marker date="1587290255993" expanded="true" signature="155:1704" ph="{...}" />
-                    <marker date="1587290255993" expanded="true" signature="226:1689" ph="{...}" />
-                    <marker date="1587290255993" expanded="true" signature="1735:2550" ph="{...}" />
-                    <marker date="1587290255993" expanded="true" signature="1805:2535" ph="{...}" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$USER_HOME$/Desktop/shader_development.md">
-              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-                <state split_layout="FIRST">
-                  <first_editor relative-caret-position="613">
-                    <caret line="586" column="34" selection-start-line="586" selection-start-column="12" selection-end-line="586" selection-end-column="34" />
-                  </first_editor>
-                  <second_editor />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -106,73 +154,34 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Shaders/Rim.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Shaders/Hole.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/35B11674-2FBF-4022-A981-AA51C75CBBAF/50/70a11162/Input.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Shaders/BumpedEnvironment.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Singleton/SingletonClient.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Shaders/Hologram.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Shaders/Window/BumpedDiffuseStencil.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Singleton/SingleSceneSingletonBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/96AE2EFF-98B6-41EB-BFBF-3ABEA9871F75/d5/242125e1/Component.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Singleton/ResourceWithLifecycle.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Shaders/BumpDiffuse.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Singleton/MultiSceneSingletonBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Singleton/Singleton.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Particles/ParticleSystemControllerWindow.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Shaders/BasicPhong.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/Window/WindowStencil.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Shaders/NormalPlay.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Shaders/VF/VFMat.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/SceneManagement/LoadSceneTest.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/Development/Projects/ProjectTinySamples/Tiny3D/Library/PackageCache/com.unity.entities@0.5.1-preview.11/Unity.Entities/Iterators/EntityQuery.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Shaders/HelloShader.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/96AE2EFF-98B6-41EB-BFBF-3ABEA9871F75/49/127987f2/YieldInstruction.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/CommonScenarios/MoveFromStartToEnd.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Shaders/DotProduct.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/CommonScenarios/MoveAround.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/96AE2EFF-98B6-41EB-BFBF-3ABEA9871F75/c9/1d081c79/PlayerPrefs.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Shaders/StandardSpecPBR.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Logging/LoggingUtils.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/PhysicsSandbox/CollisionEventListener.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/PhysicsSandbox/TriggerEventListener.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/96AE2EFF-98B6-41EB-BFBF-3ABEA9871F75/dd/082cc3c3/WaitForSeconds.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Shaders/PropertiesChallenge3.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DataManagement/FilePersister.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/98FAC219-BD4E-4536-93D7-6FDA7BD96AB0/78/093424eb/BinaryFormatter.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/99258562-0D64-4271-98DD-F3A0E1467733/7b/b5437b62/IEnumerator.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DataManagement/PlayerPrefsManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Shaders/BasicLambert.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Shaders/Transparent.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/98FAC219-BD4E-4536-93D7-6FDA7BD96AB0/e4/613da820/FileShare.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/96AE2EFF-98B6-41EB-BFBF-3ABEA9871F75/de/799bb98a/Behaviour.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Shaders/TwoSide.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/InputSandbox/KeyInputRead.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Shaders/PropertiesChallenge1.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/InputSandbox/InputReading.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/96AE2EFF-98B6-41EB-BFBF-3ABEA9871F75/a8/c92a2027/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/96AE2EFF-98B6-41EB-BFBF-3ABEA9871F75/03/f9bb94b2/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/InputSandbox/Selectable.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Fundamentals/InstantiateObject.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Fundamentals/LogMajorEvents.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/VF/FirstUnlit.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/unity-core/Assets/Scripts/Possible/DisposableManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Fundamentals/DestroyChildren.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/96AE2EFF-98B6-41EB-BFBF-3ABEA9871F75/e0/5da3589f/SceneManager.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/96AE2EFF-98B6-41EB-BFBF-3ABEA9871F75/ef/4e27df9f/Transform.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Shaders/PropertiesChallenge4.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/CodeSandbox/LoopTest.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/96AE2EFF-98B6-41EB-BFBF-3ABEA9871F75/52/ebc6ecea/Camera.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/ThirdParty/Standard Assets/Vehicles/Aircraft/Scripts/AeroplaneAudio.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Shaders/ToonShader.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Shaders/BumpedEnvironmentChallenge.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Shaders/Wall.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/unity-core/Assets/Scripts/Possible/SingletonBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Shaders/StandardPBR.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/CoroutineTestScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shaders/VF/VFMat.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/VF/VFLight.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/Stripes.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shaders/BasicLambert.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shaders/PropertiesChallenge3.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shaders/TwoSide.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shaders/BumpedEnvironment.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shaders/HelloShader.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shaders/PropertiesChallenge4.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shaders/BumpedEnvironmentChallenge.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shaders/Rim.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shaders/PropertiesChallenge1.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shaders/Hole.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/PropertiesChallenge2.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7BFCA25E-1245-47CE-AABF-6A889F1385CF/39/35e5b14c/ParticleSystemStopBehavior.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shaders/Wall.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shaders/StandardSpecPBR.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shaders/BasicPhong.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shaders/Hologram.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shaders/StandardPBR.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shaders/BumpDiffuse.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shaders/DotProduct.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shaders/ToonShader.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shaders/NormalPlay.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shaders/Transparent.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shaders/Window/BumpedDiffuseStencil.shader" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -231,11 +240,15 @@
       </list>
     </option>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1680" />
     <option name="height" value="1027" />
   </component>
+  <component name="ProjectId" id="2Df1fIpFhsKrO7kr7VOVXrNnTi1" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="UnityExplorer" proportions="" version="1">
@@ -283,41 +296,46 @@
       <pane id="FileSystemExplorer" />
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/shader_development.md" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="rider.run.widget.enabled.cache" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="3745">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="3745" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
       <method v="2" />
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -362,6 +380,7 @@
       <workItem from="1587107168442" duration="6031000" />
       <workItem from="1587233234203" duration="2803000" />
       <workItem from="1587284659782" duration="3283000" />
+      <workItem from="1661075439143" duration="635000" />
     </task>
     <servers />
   </component>
@@ -440,10 +459,25 @@
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
-  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -454,40 +488,19 @@
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/96AE2EFF-98B6-41EB-BFBF-3ABEA9871F75/ef/4e27df9f/Transform.cs</url>
           <line>952</line>
-          <properties documentPath="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/96AE2EFF-98B6-41EB-BFBF-3ABEA9871F75/ef/4e27df9f/Transform.cs" initialLine="952">
-            <startOffsets>
-              <option value="31026" />
-            </startOffsets>
-            <endOffsets>
-              <option value="31081" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/96AE2EFF-98B6-41EB-BFBF-3ABEA9871F75/ef/4e27df9f/Transform.cs" initialLine="952" />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/96AE2EFF-98B6-41EB-BFBF-3ABEA9871F75/ef/4e27df9f/Transform.cs</url>
           <line>958</line>
-          <properties documentPath="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/96AE2EFF-98B6-41EB-BFBF-3ABEA9871F75/ef/4e27df9f/Transform.cs" initialLine="958">
-            <startOffsets>
-              <option value="31146" />
-            </startOffsets>
-            <endOffsets>
-              <option value="31197" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/96AE2EFF-98B6-41EB-BFBF-3ABEA9871F75/ef/4e27df9f/Transform.cs" initialLine="958" />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/96AE2EFF-98B6-41EB-BFBF-3ABEA9871F75/ef/4e27df9f/Transform.cs</url>
           <line>963</line>
-          <properties documentPath="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/96AE2EFF-98B6-41EB-BFBF-3ABEA9871F75/ef/4e27df9f/Transform.cs" initialLine="963">
-            <startOffsets>
-              <option value="31249" />
-            </startOffsets>
-            <endOffsets>
-              <option value="31272" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/96AE2EFF-98B6-41EB-BFBF-3ABEA9871F75/ef/4e27df9f/Transform.cs" initialLine="963" />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
