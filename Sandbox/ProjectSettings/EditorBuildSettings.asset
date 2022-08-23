@@ -5,10 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/InputSandbox/InputScene.unity
     guid: 840b8a07002af48dbbafc3614ae58455
-  - enabled: 1
+  - enabled: 0
     path: Assets/SceneManagement/SceneManagementScene.unity
     guid: b997ac57fba874ae682923a0a26f3947
   m_configObjects: {}
