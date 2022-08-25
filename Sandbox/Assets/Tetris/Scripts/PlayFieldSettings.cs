@@ -7,5 +7,6 @@ namespace Tetris.Scripts
     {
         public float TickDurationInSeconds;
         public float MovementSize;
+        public Vector2 SpawnPosition;
     }
 }

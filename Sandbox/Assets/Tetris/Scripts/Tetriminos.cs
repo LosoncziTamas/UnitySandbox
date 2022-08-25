@@ -6,7 +6,7 @@ namespace Tetris.Scripts
     [CreateAssetMenu]
     public class Tetriminos : ScriptableObject
     {
-        private readonly List<Tetrimino> _tetriminos = new List<Tetrimino>();
+        private readonly List<Tetrimino> _tetriminos = new();
 
         [SerializeField] private List<Tetrimino> _prefabs;
         
@@ -24,7 +24,8 @@ namespace Tetris.Scripts
         {
             // TODO: implement random selection
             // TODO: implement positioning
-            return Instantiate(_prefabs[0]);
+            var tetrimino = Instantiate(_prefabs[0]);
+            return tetrimino;
         }
     }
 }

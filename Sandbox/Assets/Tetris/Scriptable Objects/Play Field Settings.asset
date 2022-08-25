@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TickDurationInSeconds: 1
   MovementSize: 1
+  SpawnPosition: {x: 0, y: 20}

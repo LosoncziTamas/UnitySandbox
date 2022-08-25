@@ -12,8 +12,14 @@ namespace Tetris.Scripts
         [SerializeField] private Sensor _rightSensor;
         [SerializeField] private Sensor _bottomSensor;
 
+        private Transform _transform;
+
         private void Awake()
         {
+            _transform = transform;
+            var currentPosition = _transform.position;
+            currentPosition.y = _playFieldSettings.SpawnPosition.y;
+            _transform.position = currentPosition;
             _tetriminos.Add(this);
         }
 
@@ -27,7 +33,7 @@ namespace Tetris.Scripts
             var canMove = !_leftSensor.Colliding;
             if (canMove)
             {
-                transform.Translate(Vector3.left * _playFieldSettings.MovementSize);
+                _transform.Translate(Vector3.left * _playFieldSettings.MovementSize);
             }
             return canMove;
         }
@@ -37,7 +43,7 @@ namespace Tetris.Scripts
             var canMove = !_rightSensor.Colliding;
             if (canMove)
             {
-                transform.Translate(Vector3.right * _playFieldSettings.MovementSize);
+                _transform.Translate(Vector3.right * _playFieldSettings.MovementSize);
             }
             return canMove;
         }
@@ -47,7 +53,7 @@ namespace Tetris.Scripts
             var canMove = !_bottomSensor.Colliding;
             if (canMove)
             {
-                transform.Translate(Vector3.down * _playFieldSettings.MovementSize);
+                _transform.Translate(Vector3.down * _playFieldSettings.MovementSize);
             }
             return canMove;
         }
