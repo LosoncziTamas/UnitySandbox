@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d76f5a3b0ea49c7aa57a6e9aa04e382, type: 3}
   m_Name: Play Field Settings
   m_EditorClassIdentifier: 
-  TickDurationInSeconds: 1
+  TickDurationInSeconds: 0.1
   MovementSize: 1
-  SpawnPosition: {x: 0, y: 20}
+  SpawnPosition: {x: 0, y: 19.5}

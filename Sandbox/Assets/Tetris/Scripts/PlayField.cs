@@ -48,14 +48,17 @@ namespace Tetris.Scripts
 
         private void Update()
         {
-            var horizontal = Input.GetAxis("Horizontal");
-            if (horizontal < 0)
+            if (Input.GetKeyDown(KeyCode.LeftArrow))
             {
                 _currentPiece.MoveLeft();
             }
-            else if (horizontal > 0)
+            else if (Input.GetKeyDown(KeyCode.RightArrow))
             {
                 _currentPiece.MoveRight();
+            }
+            else if (Input.GetKeyDown(KeyCode.Space))
+            {
+                _currentPiece.Rotate();
             }
         }
     }

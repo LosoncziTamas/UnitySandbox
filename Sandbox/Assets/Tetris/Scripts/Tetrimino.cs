@@ -11,6 +11,9 @@ namespace Tetris.Scripts
         [SerializeField] private Sensor _leftSensor;
         [SerializeField] private Sensor _rightSensor;
         [SerializeField] private Sensor _bottomSensor;
+        [SerializeField] private Sensor _topSensor;
+        
+        [SerializeField] private Transform _meshContainer;
 
         private Transform _transform;
 
@@ -50,7 +53,8 @@ namespace Tetris.Scripts
 
         public bool MoveDown()
         {
-            var canMove = !_bottomSensor.Colliding;
+            var upsideDown = _meshContainer.rotation.eulerAngles == Vector3.forward * 180;
+            var canMove = upsideDown ? !_topSensor.Colliding : !_bottomSensor.Colliding;
             if (canMove)
             {
                 _transform.Translate(Vector3.down * _playFieldSettings.MovementSize);
@@ -60,7 +64,7 @@ namespace Tetris.Scripts
 
         public void Rotate()
         {
-            
+            _meshContainer.Rotate(Vector3.forward, 90);
         }
         
     }
