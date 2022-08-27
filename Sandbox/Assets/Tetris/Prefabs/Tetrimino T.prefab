@@ -508,6 +508,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Right Sensor
       objectReference: {fileID: 0}
+    - target: {fileID: 6648386581043157906, guid: ed6d59428645940c59efb9ff00a71b0e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6648386581043157907, guid: ed6d59428645940c59efb9ff00a71b0e,
         type: 3}
       propertyPath: m_RootOrder
@@ -594,6 +599,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Top Sensor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6648386581043157906, guid: ed6d59428645940c59efb9ff00a71b0e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6648386581043157907, guid: ed6d59428645940c59efb9ff00a71b0e,
         type: 3}
@@ -737,6 +747,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground Sensor
       objectReference: {fileID: 0}
+    - target: {fileID: 7276067868055413243, guid: 95d417a6b433542c3bc37ad0eee4dfe9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95d417a6b433542c3bc37ad0eee4dfe9, type: 3}
 --- !u!114 &439493568598741709 stripped
@@ -768,6 +783,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Left Sensor
+      objectReference: {fileID: 0}
+    - target: {fileID: 3212332227307109170, guid: 7278ecbb55395487d917acc711b7fab0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3212332227307109171, guid: 7278ecbb55395487d917acc711b7fab0,
         type: 3}

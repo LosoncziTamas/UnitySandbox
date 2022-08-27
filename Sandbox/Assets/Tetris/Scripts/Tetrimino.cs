@@ -51,10 +51,37 @@ namespace Tetris.Scripts
             return canMove;
         }
 
+        private static readonly Vector3 RotatedBy90 = Vector3.forward * 90; 
+        private static readonly Vector3 RotatedBy180 = Vector3.forward * 180; 
+        private static readonly Vector3 RotatedBy270 = Vector3.forward * 270; 
+        private static readonly Vector3 RotatedBy0 = Vector3.zero;
+        
+        private bool CanMoveDown()
+        {
+            var canMove = true;
+            if (_meshContainer.rotation.eulerAngles == RotatedBy90)
+            {
+                canMove = !_leftSensor.Colliding;
+            }
+            else if (_meshContainer.rotation.eulerAngles == RotatedBy180)
+            {
+                canMove = !_topSensor.Colliding;
+            }
+            else if (_meshContainer.rotation.eulerAngles == RotatedBy270)
+            {
+                canMove = !_rightSensor.Colliding;
+            }
+            else if (_meshContainer.rotation.eulerAngles == RotatedBy0)
+            {
+                canMove = !_bottomSensor.Colliding;
+            }
+
+            return canMove;
+        }
+
         public bool MoveDown()
         {
-            var upsideDown = _meshContainer.rotation.eulerAngles == Vector3.forward * 180;
-            var canMove = upsideDown ? !_topSensor.Colliding : !_bottomSensor.Colliding;
+            var canMove = CanMoveDown();
             if (canMove)
             {
                 _transform.Translate(Vector3.down * _playFieldSettings.MovementSize);
