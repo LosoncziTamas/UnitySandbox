@@ -8,6 +8,7 @@ namespace Tetris.Scripts
         [SerializeField] private PlayFieldSettings _playFieldSettings;
         [SerializeField] private Tetriminos _tetriminos;
         [SerializeField] private Transform _meshContainer;
+        [SerializeField] private Sensor _ghostMesh;
 
         private Transform _transform;
 
@@ -55,20 +56,16 @@ namespace Tetris.Scripts
             return canMove;
         }
 
+        private bool CanMoveDown()
+        {
+            _ghostMesh.transform.Translate(Vector3.down * _playFieldSettings.MovementSize, Space.World);
+            return _ghostMesh.Colliding;
+        }
+
         public void Rotate()
         {
             _meshContainer.Rotate(Vector3.forward, 90);
-        }
-
-        private void OnCollisionEnter(Collision collision)
-        {
-            Debug.Log("On Collision enter");
-        }
-
-        private void OnCollisionStay(Collision collisionInfo)
-        {
-            Debug.Log("On Collision stay");
-
+            _ghostMesh.transform.Rotate(Vector3.forward, 90);
         }
     }
 }
