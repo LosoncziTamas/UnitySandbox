@@ -28,7 +28,7 @@ namespace Tetris.Scripts
 
         public bool MoveLeft()
         {
-            var canMove = true;
+            var canMove = CanMoveInDirection(Vector3.left, _ghostMesh.transform);
             if (canMove)
             {
                 _transform.Translate(Vector3.left * _playFieldSettings.MovementSize);
@@ -38,7 +38,7 @@ namespace Tetris.Scripts
 
         public bool MoveRight()
         {
-            var canMove = true;
+            var canMove = CanMoveInDirection(Vector3.right, _ghostMesh.transform);
             if (canMove)
             {
                 _transform.Translate(Vector3.right * _playFieldSettings.MovementSize);
@@ -48,18 +48,25 @@ namespace Tetris.Scripts
         
         public bool MoveDown()
         {
-            var canMove = true;
+            var canMove = CanMoveInDirection(Vector3.down, _ghostMesh.transform);
             if (canMove)
             {
                 _transform.Translate(Vector3.down * _playFieldSettings.MovementSize);
             }
+            else
+            {
+                var breakHere = 5.0;
+            }
             return canMove;
         }
-
-        private bool CanMoveDown()
+        
+        private bool CanMoveInDirection(Vector3 direction, Transform trans)
         {
-            _ghostMesh.transform.Translate(Vector3.down * _playFieldSettings.MovementSize, Space.World);
-            return _ghostMesh.Colliding;
+            var originalPos = trans.position;
+            trans.Translate(direction * _playFieldSettings.MovementSize, Space.World);
+            var result = !_ghostMesh.Colliding;
+            trans.position = originalPos;
+            return result;
         }
 
         public void Rotate()
