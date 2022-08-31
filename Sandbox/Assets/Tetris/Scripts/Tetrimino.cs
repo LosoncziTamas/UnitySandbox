@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 namespace Tetris.Scripts
@@ -8,7 +7,11 @@ namespace Tetris.Scripts
         [SerializeField] private PlayFieldSettings _playFieldSettings;
         [SerializeField] private Tetriminos _tetriminos;
         [SerializeField] private Transform _meshContainer;
-        [SerializeField] private Sensor _ghostMesh;
+        [SerializeField] private Transform _sensors;
+        [SerializeField] private Sensor _bottomSensor;
+        [SerializeField] private Sensor _leftSensor;
+        [SerializeField] private Sensor _rightSensor;
+        [SerializeField] private Sensor _topSensor;
 
         private Transform _transform;
 
@@ -28,7 +31,7 @@ namespace Tetris.Scripts
 
         public bool MoveLeft()
         {
-            var canMove = CanMoveInDirection(Vector3.left, _ghostMesh.transform);
+            var canMove = CanMoveLeft();
             if (canMove)
             {
                 _transform.Translate(Vector3.left * _playFieldSettings.MovementSize);
@@ -36,9 +39,14 @@ namespace Tetris.Scripts
             return canMove;
         }
 
+        private bool CanMoveLeft()
+        {
+            return !_leftSensor.Colliding;
+        }
+
         public bool MoveRight()
         {
-            var canMove = CanMoveInDirection(Vector3.right, _ghostMesh.transform);
+            var canMove = CanMoveRight();
             if (canMove)
             {
                 _transform.Translate(Vector3.right * _playFieldSettings.MovementSize);
@@ -46,9 +54,14 @@ namespace Tetris.Scripts
             return canMove;
         }
         
+        private bool CanMoveRight()
+        {
+            return !_rightSensor.Colliding;
+        }
+        
         public bool MoveDown()
         {
-            var canMove = CanMoveInDirection(Vector3.down, _ghostMesh.transform);
+            var canMove = CanMoveDown();
             if (canMove)
             {
                 _transform.Translate(Vector3.down * _playFieldSettings.MovementSize);
@@ -60,19 +73,15 @@ namespace Tetris.Scripts
             return canMove;
         }
         
-        private bool CanMoveInDirection(Vector3 direction, Transform trans)
+        private bool CanMoveDown()
         {
-            var originalPos = trans.position;
-            trans.Translate(direction * _playFieldSettings.MovementSize, Space.World);
-            var result = !_ghostMesh.Colliding;
-            trans.position = originalPos;
-            return result;
+            return !_bottomSensor.Colliding;
         }
 
         public void Rotate()
         {
             _meshContainer.Rotate(Vector3.forward, 90);
-            _ghostMesh.transform.Rotate(Vector3.forward, 90);
+            _sensors.Rotate(Vector3.forward, 90);
         }
     }
 }

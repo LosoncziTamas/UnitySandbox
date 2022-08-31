@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe5a2214-42ee-49c0-aaf5-4b4a1e9b16b4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Tetris/Scripts/Extensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Tetris/Scripts/Extensions.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Sandbox/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sandbox/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Tetris/Prefabs/Tetrimino T.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tetris/Prefabs/Tetrimino T.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tetris/Scripts/PlayField.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tetris/Scripts/PlayField.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tetris/Scripts/Sensor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tetris/Scripts/Sensor.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Tetris/Scripts/Tetrimino.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tetris/Scripts/Tetrimino.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +47,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/Stripes.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/BasicLambert.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/PropertiesChallenge3.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/33e9c251baf04a87b97840179f7b0f6f157200/7c/d8b0477f/Transform.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/TwoSide.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/BumpedEnvironment.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/HelloShader.shader" root0="FORCE_HIGHLIGHTING" />
@@ -272,6 +278,9 @@
       <workItem from="1661453551451" duration="1215000" />
       <workItem from="1661542667156" duration="1743000" />
       <workItem from="1661592569308" duration="1022000" />
+      <workItem from="1661787740254" duration="765000" />
+      <workItem from="1661884140983" duration="984000" />
+      <workItem from="1661958896176" duration="3306000" />
     </task>
     <task id="LOCAL-00001" summary="remove old scripts, add CoroutineTestScript.cs">
       <created>1661076413795</created>
@@ -308,7 +317,28 @@
       <option name="project" value="LOCAL" />
       <updated>1661544318760</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="remove sensor triggers">
+      <created>1661711332962</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1661711332962</updated>
+    </task>
+    <task id="LOCAL-00007" summary="use ghost mesh for checking empty space">
+      <created>1661788499667</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1661788499667</updated>
+    </task>
+    <task id="LOCAL-00008" summary="movable check WIP">
+      <created>1661885068078</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1661885068078</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -409,7 +439,10 @@
     <MESSAGE value="tetris scratch pad" />
     <MESSAGE value="tweak playfield for tetris game" />
     <MESSAGE value="rotation WIP" />
-    <option name="LAST_COMMIT_MESSAGE" value="rotation WIP" />
+    <MESSAGE value="remove sensor triggers" />
+    <MESSAGE value="use ghost mesh for checking empty space" />
+    <MESSAGE value="movable check WIP" />
+    <option name="LAST_COMMIT_MESSAGE" value="movable check WIP" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -40,7 +40,7 @@ namespace Tetris.Scripts
             {
                 if (!_currentPiece.MoveDown())
                 {
-                    _currentPiece = _tetriminos.SpawnRandom();
+                    // _currentPiece = _tetriminos.SpawnRandom();
                 }
                 yield return _waitYield;
             }
