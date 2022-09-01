@@ -64,7 +64,7 @@ GameObject:
   - component: {fileID: 8182262547673543299}
   - component: {fileID: 683080184663385609}
   - component: {fileID: 8074818490690369491}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 5003229515241238832}
   - component: {fileID: 6566589189530104310}
   - component: {fileID: 1240690503609177238}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -195,8 +195,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2412779812547673639}
-  - component: {fileID: 5906809725484613288}
-  m_Layer: 0
+  - component: {fileID: 3120176640303287069}
+  m_Layer: 3
   m_Name: Sensors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -210,7 +210,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6191191123524440594}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -222,7 +222,7 @@ Transform:
   m_Father: {fileID: 8449849585137317259}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5906809725484613288
+--- !u!114 &3120176640303287069
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -231,9 +231,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 6191191123524440594}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c202f58636b54577bbc991fafc2fbcf8, type: 3}
+  m_Script: {fileID: 11500000, guid: 840994c40a1e45028249160ab0bcf67c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _bottomSensor: {fileID: 1240690503609177238}
+  _leftSensor: {fileID: 3720560708879365316}
+  _rightSensor: {fileID: 8074818490690369491}
+  _topSensor: {fileID: 7888122816525445120}
 --- !u!1 &7308579670227603045
 GameObject:
   m_ObjectHideFlags: 0
@@ -248,7 +252,7 @@ GameObject:
   - component: {fileID: 9114925585662816983}
   - component: {fileID: 1487271722982195623}
   - component: {fileID: 7888122816525445120}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -341,7 +345,7 @@ GameObject:
   - component: {fileID: 8960630087258458370}
   - component: {fileID: 1242873055227459209}
   - component: {fileID: 3720560708879365316}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -527,12 +531,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _playFieldSettings: {fileID: 11400000, guid: f4ad69ddc150444fe95a5fe2097eda4a, type: 2}
   _tetriminos: {fileID: 11400000, guid: d3af3eec76b4f402fa43d158f2564684, type: 2}
-  _meshContainer: {fileID: 1722456084124674189}
-  _sensors: {fileID: 2412779812547673639}
-  _bottomSensor: {fileID: 1240690503609177238}
-  _leftSensor: {fileID: 3720560708879365316}
-  _rightSensor: {fileID: 8074818490690369491}
-  _topSensor: {fileID: 7888122816525445120}
+  _fourWaySensor: {fileID: 3120176640303287069}
 --- !u!1 &8449849585405922972
 GameObject:
   m_ObjectHideFlags: 0

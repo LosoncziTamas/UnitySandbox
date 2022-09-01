@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe5a2214-42ee-49c0-aaf5-4b4a1e9b16b4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Tetris/Scripts/Extensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tetris/Scripts/Extensions.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Tetris/Scripts/FourWaySensor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Tetris/Scripts/FourWaySensor.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Sandbox/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sandbox/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Tetris/Prefabs/Tetrimino T.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tetris/Prefabs/Tetrimino T.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tetris/Scripts/PlayField.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tetris/Scripts/PlayField.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Tetris/Scripts/Sensor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tetris/Scripts/Sensor.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Tetris/Scripts/Tetrimino.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tetris/Scripts/Tetrimino.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
@@ -280,7 +279,8 @@
       <workItem from="1661592569308" duration="1022000" />
       <workItem from="1661787740254" duration="765000" />
       <workItem from="1661884140983" duration="984000" />
-      <workItem from="1661958896176" duration="3306000" />
+      <workItem from="1661958896176" duration="3434000" />
+      <workItem from="1662060751870" duration="710000" />
     </task>
     <task id="LOCAL-00001" summary="remove old scripts, add CoroutineTestScript.cs">
       <created>1661076413795</created>
@@ -338,7 +338,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661885068078</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="improve sensor code">
+      <created>1661962575802</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1661962575802</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -442,7 +449,8 @@
     <MESSAGE value="remove sensor triggers" />
     <MESSAGE value="use ghost mesh for checking empty space" />
     <MESSAGE value="movable check WIP" />
-    <option name="LAST_COMMIT_MESSAGE" value="movable check WIP" />
+    <MESSAGE value="improve sensor code" />
+    <option name="LAST_COMMIT_MESSAGE" value="improve sensor code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

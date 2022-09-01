@@ -6,12 +6,7 @@ namespace Tetris.Scripts
     {
         [SerializeField] private PlayFieldSettings _playFieldSettings;
         [SerializeField] private Tetriminos _tetriminos;
-        [SerializeField] private Transform _meshContainer;
-        [SerializeField] private Transform _sensors;
-        [SerializeField] private Sensor _bottomSensor;
-        [SerializeField] private Sensor _leftSensor;
-        [SerializeField] private Sensor _rightSensor;
-        [SerializeField] private Sensor _topSensor;
+        [SerializeField] private FourWaySensor _fourWaySensor;
 
         private Transform _transform;
 
@@ -31,40 +26,30 @@ namespace Tetris.Scripts
 
         public bool MoveLeft()
         {
-            var canMove = CanMoveLeft();
+            var canMove = _fourWaySensor.CanMoveLeft();
             if (canMove)
             {
-                _transform.Translate(Vector3.left * _playFieldSettings.MovementSize);
-            }
-            return canMove;
-        }
-
-        private bool CanMoveLeft()
-        {
-            return !_leftSensor.Colliding;
-        }
-
-        public bool MoveRight()
-        {
-            var canMove = CanMoveRight();
-            if (canMove)
-            {
-                _transform.Translate(Vector3.right * _playFieldSettings.MovementSize);
+                _transform.Translate(Vector3.left * _playFieldSettings.MovementSize, Space.World);
             }
             return canMove;
         }
         
-        private bool CanMoveRight()
+        public bool MoveRight()
         {
-            return !_rightSensor.Colliding;
+            var canMove = _fourWaySensor.CanMoveRight();
+            if (canMove)
+            {
+                _transform.Translate(Vector3.right * _playFieldSettings.MovementSize, Space.World);
+            }
+            return canMove;
         }
         
         public bool MoveDown()
         {
-            var canMove = CanMoveDown();
+            var canMove = _fourWaySensor.CanMoveDown();
             if (canMove)
             {
-                _transform.Translate(Vector3.down * _playFieldSettings.MovementSize);
+                _transform.Translate(Vector3.down * _playFieldSettings.MovementSize, Space.World);
             }
             else
             {
@@ -73,15 +58,9 @@ namespace Tetris.Scripts
             return canMove;
         }
         
-        private bool CanMoveDown()
-        {
-            return !_bottomSensor.Colliding;
-        }
-
         public void Rotate()
         {
-            _meshContainer.Rotate(Vector3.forward, 90);
-            _sensors.Rotate(Vector3.forward, 90);
+            transform.Rotate(Vector3.forward, 90);
         }
     }
 }
