@@ -38,9 +38,10 @@ namespace Tetris.Scripts
         {
             while (IsUpdating)
             {
-                if (!_currentPiece.MoveDown())
+                var pieceGrounded = !_currentPiece.MoveDown();
+                if (pieceGrounded)
                 {
-                    // _currentPiece = _tetriminos.SpawnRandom();
+                    _currentPiece = _tetriminos.SpawnRandom();
                 }
                 yield return _waitYield;
             }
@@ -59,6 +60,10 @@ namespace Tetris.Scripts
             else if (Input.GetKeyDown(KeyCode.Space))
             {
                 _currentPiece.Rotate();
+            }
+            else if (Input.GetKeyDown(KeyCode.DownArrow))
+            {
+                // TODO: move to the latest pos
             }
         }
     }
