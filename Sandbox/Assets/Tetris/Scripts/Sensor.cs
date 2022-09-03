@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using JetBrains.Annotations;
 using UnityEngine;
 
 namespace Tetris.Scripts
@@ -9,7 +10,14 @@ namespace Tetris.Scripts
         public bool Colliding => _colliders.Count > 0;
 
         private readonly List<Collider> _colliders = new();
-        
+
+        [CanBeNull] private BoxCollider _boxCollider;
+
+        private void Awake()
+        {
+            _boxCollider = GetComponent<BoxCollider>();
+        }
+
         // TODO: support using different layers
         private void OnTriggerEnter(Collider other)
         {
@@ -33,6 +41,11 @@ namespace Tetris.Scripts
                     var bounds = c.bounds;
                     Gizmos.color = Color.red;
                     Gizmos.DrawWireCube(bounds.center, bounds.size);
+                    if (_boxCollider)
+                    {
+                        Gizmos.color = Color.magenta;
+                        Gizmos.DrawWireCube(_boxCollider.transform.TransformPoint(_boxCollider.center), _boxCollider.size);
+                    }
                 }
             }
         }

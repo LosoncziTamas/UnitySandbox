@@ -7,12 +7,12 @@ namespace Tetris.Scripts
     public class PlayField : MonoBehaviour
     {
         [SerializeField] private PlayFieldSettings _playFieldSettings;
-        [SerializeField] private Tetriminos _tetriminos;
+        [SerializeField] private Tetrominos _tetrominos;
         
         public bool IsUpdating { get; private set; }
 
         private YieldInstruction _waitYield;
-        private Tetrimino _currentPiece;
+        private Tetromino _currentPiece;
 
         private void Awake()
         {
@@ -30,7 +30,7 @@ namespace Tetris.Scripts
         public void StartLevel()
         {
             IsUpdating = true;
-            _currentPiece = _tetriminos.SpawnRandom();
+            _currentPiece = _tetrominos.SpawnRandom();
             StartCoroutine(GameLoop());
         }
 
@@ -41,7 +41,8 @@ namespace Tetris.Scripts
                 var pieceGrounded = !_currentPiece.MoveDown();
                 if (pieceGrounded)
                 {
-                    _currentPiece = _tetriminos.SpawnRandom();
+                    Debug.Break();
+                    _currentPiece = _tetrominos.SpawnRandom();
                 }
                 yield return _waitYield;
             }

@@ -1,0 +1,21 @@
+using System;
+using UnityEngine;
+
+namespace Tetris.Scripts
+{
+    public class TetrominoPiece : MonoBehaviour
+    {
+        [SerializeField] private FourWaySensor _fourWaySensor;
+
+        public bool CanMoveInDirection(Direction direction)
+        {
+            return direction switch
+            {
+                Direction.Left => _fourWaySensor.CanMoveLeft(),
+                Direction.Right => _fourWaySensor.CanMoveRight(),
+                Direction.Down => _fourWaySensor.CanMoveDown(),
+                _ => throw new ArgumentOutOfRangeException(nameof(direction), direction, null)
+            };
+        }
+    }
+}

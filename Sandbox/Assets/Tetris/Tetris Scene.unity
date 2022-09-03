@@ -270,7 +270,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playFieldSettings: {fileID: 11400000, guid: f4ad69ddc150444fe95a5fe2097eda4a, type: 2}
-  _tetriminos: {fileID: 11400000, guid: d3af3eec76b4f402fa43d158f2564684, type: 2}
+  _tetrominos: {fileID: 11400000, guid: d3af3eec76b4f402fa43d158f2564684, type: 2}
 --- !u!1 &967053201
 GameObject:
   m_ObjectHideFlags: 0
@@ -790,7 +790,7 @@ PrefabInstance:
     - target: {fileID: 1974087007436438090, guid: 20ef002bddfac48a2afb3eabb21a0167,
         type: 3}
       propertyPath: m_Name
-      value: Tetrimino I
+      value: Tetromino I
       objectReference: {fileID: 0}
     - target: {fileID: 1974087007436438090, guid: 20ef002bddfac48a2afb3eabb21a0167,
         type: 3}
@@ -919,7 +919,7 @@ PrefabInstance:
     - target: {fileID: 3261662818445913401, guid: 5faef54a391b443d6a245849d9134451,
         type: 3}
       propertyPath: m_Name
-      value: Tetrimino J
+      value: Tetromino J
       objectReference: {fileID: 0}
     - target: {fileID: 3261662818445913401, guid: 5faef54a391b443d6a245849d9134451,
         type: 3}
@@ -938,7 +938,7 @@ PrefabInstance:
     - target: {fileID: 8449849585137317258, guid: 0faf819224ce14849a081bb409b3b8bb,
         type: 3}
       propertyPath: m_Name
-      value: Tetrimino T
+      value: Tetromino T
       objectReference: {fileID: 0}
     - target: {fileID: 8449849585137317258, guid: 0faf819224ce14849a081bb409b3b8bb,
         type: 3}
