@@ -44,7 +44,7 @@ namespace Tetris.Scripts
                     if (_boxCollider)
                     {
                         Gizmos.color = Color.magenta;
-                        Gizmos.DrawWireCube(_boxCollider.transform.TransformPoint(_boxCollider.center), _boxCollider.size);
+                        Gizmos.DrawCube(_boxCollider.transform.TransformPoint(_boxCollider.center), _boxCollider.size);
                     }
                 }
             }

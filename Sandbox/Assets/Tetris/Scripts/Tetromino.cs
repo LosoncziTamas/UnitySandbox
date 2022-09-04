@@ -42,7 +42,7 @@ namespace Tetris.Scripts
 
         public bool MoveLeft()
         {
-            var rotation = transform.rotation.y;
+            var rotation = GetRotation();
             List<TetrominoPiece> piecesToTest = null;
             if (Mathf.Approximately(0, rotation))
             {
@@ -70,7 +70,7 @@ namespace Tetris.Scripts
         
         public bool MoveRight()
         {
-            var rotation = transform.rotation.y;
+            var rotation = GetRotation();
             List<TetrominoPiece> piecesToTest = null;
             if (Mathf.Approximately(0, rotation))
             {
@@ -95,10 +95,15 @@ namespace Tetris.Scripts
             }
             return canMove;
         }
+
+        private float GetRotation()
+        {
+            return transform.rotation.eulerAngles.z;
+        }
         
         public bool MoveDown()
         {
-            var rotation = transform.rotation.y;
+            var rotation = GetRotation();
             List<TetrominoPiece> piecesToTest = null;
             if (Mathf.Approximately(0, rotation))
             {
