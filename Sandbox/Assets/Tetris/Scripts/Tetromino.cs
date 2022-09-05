@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,6 +8,7 @@ namespace Tetris.Scripts
     {
         [SerializeField] private PlayFieldSettings _playFieldSettings;
         [SerializeField] private Tetrominos _tetrominos;
+        [SerializeField] private Sensor _rotationTestSensor;
         [SerializeField] private List<TetrominoPiece> _downwardFacingPieces;
         [SerializeField] private List<TetrominoPiece> _upwardFacingPieces;
         [SerializeField] private List<TetrominoPiece> _leftwardFacingPieces;
@@ -132,12 +134,17 @@ namespace Tetris.Scripts
             }
             return canMove;
         }
-        
-        public bool Rotate()
+
+        public IEnumerator Rotate()
         {
-            // TODO: check if rotation should be performed
             transform.Rotate(Vector3.forward, 90);
-            return true;
+            yield return new WaitForFixedUpdate();
+            while(_rotationTestSensor.Colliding)
+            {
+                transform.Rotate(Vector3.forward, 90);
+                yield return new WaitForFixedUpdate();
+            }
+            yield break;
         }
     }
 }

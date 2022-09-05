@@ -2,29 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe5a2214-42ee-49c0-aaf5-4b4a1e9b16b4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Tetris/Scripts/BaseList.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tetris/Scripts/BaseList.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tetris/Scripts/Direction.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tetris/Scripts/Direction.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tetris/Scripts/TetrominoPiece.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tetris/Scripts/TetrominoPiece.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tetris/Scripts/Tetrominos.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Sandbox/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sandbox/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tetris/Prefabs/Tetrimino I.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tetris/Prefabs/Tetrimino I.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tetris/Prefabs/Tetrimino J.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tetris/Prefabs/Tetrimino J.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tetris/Prefabs/Tetrimino T.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tetris/Prefabs/Tetrimino T.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tetris/Prefabs/Tetromino T.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tetris/Prefabs/Tetromino T.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Tetris/Scripts/PlayField.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tetris/Scripts/PlayField.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tetris/Scripts/Sensor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tetris/Scripts/Sensor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tetris/Scripts/Tetrimino.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tetris/Scripts/Tetromino.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tetris/Scripts/Tetrimino.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tetris/Scripts/Tetromino.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tetris/Scripts/Tetriminos.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tetris/Scripts/Tetriminos.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tetris/Scripts/Tetrominos.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tetris/Tetris Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tetris/Tetris Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tetris/Scripts/Tetromino.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tetris/Scripts/Tetromino.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,6 +51,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/33e9c251baf04a87b97840179f7b0f6f157200/89/ee6ae15a/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/PropertiesChallenge4.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/BumpedEnvironmentChallenge.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/tamaslosonczi/Development/Unity3D/UnitySandbox/Sandbox/Assets/Tetris/Scripts/Tetromino.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/Rim.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/PropertiesChallenge1.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/Hole.shader" root0="FORCE_HIGHLIGHTING" />
@@ -299,7 +281,9 @@
       <workItem from="1661958896176" duration="3434000" />
       <workItem from="1662060751870" duration="1118000" />
       <workItem from="1662147475850" duration="1267000" />
-      <workItem from="1662209079876" duration="4567000" />
+      <workItem from="1662209079876" duration="4725000" />
+      <workItem from="1662308655591" duration="1962000" />
+      <workItem from="1662410237899" duration="314000" />
     </task>
     <task id="LOCAL-00001" summary="remove old scripts, add CoroutineTestScript.cs">
       <created>1661076413795</created>
@@ -378,7 +362,21 @@
       <option name="project" value="LOCAL" />
       <updated>1662148591221</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="game architecture changes">
+      <created>1662222404316</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1662222404316</updated>
+    </task>
+    <task id="LOCAL-00013" summary="fix flaw in movement code">
+      <created>1662309937422</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1662309937422</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -485,7 +483,9 @@
     <MESSAGE value="improve sensor code" />
     <MESSAGE value="implement four-way sensor" />
     <MESSAGE value="fixed missing colliders" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed missing colliders" />
+    <MESSAGE value="game architecture changes" />
+    <MESSAGE value="fix flaw in movement code" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix flaw in movement code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -511,6 +511,19 @@
           <line>963</line>
           <properties documentPath="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/96AE2EFF-98B6-41EB-BFBF-3ABEA9871F75/ef/4e27df9f/Transform.cs" initialLine="963" />
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Tetris/Scripts/Tetromino.cs</url>
+          <line>107</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Tetris/Scripts/Tetromino.cs" initialLine="100" containingFunctionPresentation="method 'MoveDown'">
+            <startOffsets>
+              <option value="3514" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3543" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

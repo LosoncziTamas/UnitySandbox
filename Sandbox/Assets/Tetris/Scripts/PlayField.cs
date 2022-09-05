@@ -60,7 +60,7 @@ namespace Tetris.Scripts
             }
             else if (Input.GetKeyDown(KeyCode.Space))
             {
-                _currentPiece.Rotate();
+                StartCoroutine(_currentPiece.Rotate());
             }
             else if (Input.GetKeyDown(KeyCode.DownArrow))
             {
