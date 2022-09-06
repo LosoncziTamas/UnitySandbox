@@ -214,6 +214,7 @@ GameObject:
   - component: {fileID: 3797938327822311046}
   - component: {fileID: 3204875450273890191}
   - component: {fileID: 8037185441795064164}
+  - component: {fileID: 7412271983321545412}
   m_Layer: 6
   m_Name: Tetromino Piece
   m_TagString: Untagged
@@ -313,6 +314,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _fourWaySensor: {fileID: 4598841393278930689}
+  _collisionSensor: {fileID: 7412271983321545412}
+--- !u!114 &7412271983321545412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3797938327822311045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c202f58636b54577bbc991fafc2fbcf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4226712889507361790
 GameObject:
   m_ObjectHideFlags: 0
