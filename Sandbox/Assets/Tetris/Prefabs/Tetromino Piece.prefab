@@ -67,6 +67,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c202f58636b54577bbc991fafc2fbcf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _drawGizmo: 0
 --- !u!1 &3305148058119621697
 GameObject:
   m_ObjectHideFlags: 0
@@ -134,6 +135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c202f58636b54577bbc991fafc2fbcf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _drawGizmo: 0
 --- !u!1 &3499677815221897834
 GameObject:
   m_ObjectHideFlags: 0
@@ -201,6 +203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c202f58636b54577bbc991fafc2fbcf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _drawGizmo: 0
 --- !u!1 &3797938327822311045
 GameObject:
   m_ObjectHideFlags: 0
@@ -296,10 +299,10 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3797938327822311045}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 0.95, y: 0.95, z: 0.95}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &8037185441795064164
 MonoBehaviour:
@@ -327,6 +330,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c202f58636b54577bbc991fafc2fbcf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _drawGizmo: 0
 --- !u!1 &4226712889507361790
 GameObject:
   m_ObjectHideFlags: 0
@@ -394,6 +398,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c202f58636b54577bbc991fafc2fbcf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _drawGizmo: 0
 --- !u!1 &4904169901513008612
 GameObject:
   m_ObjectHideFlags: 0

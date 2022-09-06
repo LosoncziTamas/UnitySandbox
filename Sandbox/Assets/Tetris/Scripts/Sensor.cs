@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using JetBrains.Annotations;
 using UnityEngine;
@@ -11,6 +10,8 @@ namespace Tetris.Scripts
 
         private readonly List<Collider> _colliders = new();
 
+        [SerializeField] private bool _drawGizmo;
+        
         [CanBeNull] private BoxCollider _boxCollider;
 
         private void Awake()
@@ -18,7 +19,6 @@ namespace Tetris.Scripts
             _boxCollider = GetComponent<BoxCollider>();
         }
 
-        // TODO: support using different layers
         private void OnTriggerEnter(Collider other)
         {
             _colliders.Add(other);
@@ -32,8 +32,25 @@ namespace Tetris.Scripts
             }
         }
 
+        private void OnCollisionEnter(Collision collision)
+        {
+            _colliders.Add(collision.collider);
+        }
+
+        private void OnCollisionExit(Collision other)
+        {
+            if (!_colliders.Remove(other.collider))
+            {
+                Debug.LogError($"[{this.GetFullPathToObject()}] Collider removal failed.");
+            }
+        }
+
         private void OnDrawGizmos()
         {
+            if (!_drawGizmo)
+            {
+                return;
+            }
             if (Colliding)
             {
                 foreach (var c in _colliders)

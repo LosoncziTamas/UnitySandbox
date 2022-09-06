@@ -8,7 +8,6 @@ namespace Tetris.Scripts
     {
         [SerializeField] private PlayFieldSettings _playFieldSettings;
         [SerializeField] private Tetrominos _tetrominos;
-        [SerializeField] private Sensor _rotationTestSensor;
         [SerializeField] private List<TetrominoPiece> _downwardFacingPieces;
         [SerializeField] private List<TetrominoPiece> _upwardFacingPieces;
         [SerializeField] private List<TetrominoPiece> _leftwardFacingPieces;
@@ -131,7 +130,7 @@ namespace Tetris.Scripts
             }
             else
             {
-                
+                Debug.Break();
             }
             return canMove;
         }
@@ -142,7 +141,6 @@ namespace Tetris.Scripts
             {
                 if (piece.Colliding())
                 {
-                    Debug.Break();
                     return true;
                 }
             }
@@ -150,14 +148,15 @@ namespace Tetris.Scripts
             return false;
         }
 
+        //TODO: figure out something else
         public IEnumerator Rotate()
         {
             transform.Rotate(Vector3.forward, 90);
-            yield return new WaitForFixedUpdate();
+            yield return null;
             while (AnyPieceIsColliding())
             {
                 transform.Rotate(Vector3.forward, 90);
-                yield return new WaitForFixedUpdate();
+                yield return null;
             }
         }
     }

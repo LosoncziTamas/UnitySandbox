@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using UnityEngine;
 
@@ -41,7 +40,6 @@ namespace Tetris.Scripts
                 var pieceGrounded = !_currentPiece.MoveDown();
                 if (pieceGrounded)
                 {
-                    Debug.Break();
                     _currentPiece = _tetrominos.SpawnRandom();
                 }
                 yield return _waitYield;
