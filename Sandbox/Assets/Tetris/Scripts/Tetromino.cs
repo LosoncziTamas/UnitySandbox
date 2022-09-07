@@ -130,7 +130,7 @@ namespace Tetris.Scripts
             }
             else
             {
-                Debug.Break();
+                    
             }
             return canMove;
         }
@@ -148,15 +148,14 @@ namespace Tetris.Scripts
             return false;
         }
 
-        //TODO: figure out something else
         public IEnumerator Rotate()
         {
             transform.Rotate(Vector3.forward, 90);
-            yield return null;
+            yield return new WaitForFixedUpdate();
             while (AnyPieceIsColliding())
             {
                 transform.Rotate(Vector3.forward, 90);
-                yield return null;
+                yield return new WaitForFixedUpdate();
             }
         }
     }

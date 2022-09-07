@@ -7,17 +7,12 @@ namespace Tetris.Scripts
     {
         [SerializeField] private PlayFieldSettings _playFieldSettings;
         [SerializeField] private Tetrominos _tetrominos;
-        
+
         public bool IsUpdating { get; private set; }
 
-        private YieldInstruction _waitYield;
         private Tetromino _currentPiece;
-
-        private void Awake()
-        {
-            _waitYield = new WaitForSeconds(_playFieldSettings.TickDurationInSeconds);
-        }
-
+        private float _accumulator;
+        
         private void OnGUI()
         {
             if (GUILayout.Button("Start Level"))
@@ -30,19 +25,15 @@ namespace Tetris.Scripts
         {
             IsUpdating = true;
             _currentPiece = _tetrominos.SpawnRandom();
-            StartCoroutine(GameLoop());
         }
-
-        private IEnumerator GameLoop()
+        
+        private void UpdateGame()
         {
-            while (IsUpdating)
+            _accumulator = 0;
+            var pieceGrounded = !_currentPiece.MoveDown();
+            if (pieceGrounded)
             {
-                var pieceGrounded = !_currentPiece.MoveDown();
-                if (pieceGrounded)
-                {
-                    _currentPiece = _tetrominos.SpawnRandom();
-                }
-                yield return _waitYield;
+                _currentPiece = _tetrominos.SpawnRandom();
             }
         }
 
@@ -63,6 +54,15 @@ namespace Tetris.Scripts
             else if (Input.GetKeyDown(KeyCode.DownArrow))
             {
                 // TODO: move to the latest pos
+            }
+
+            if (IsUpdating)
+            {
+                _accumulator += Time.deltaTime;
+                if (_accumulator >= _playFieldSettings.TickDurationInSeconds)
+                {
+                    UpdateGame();
+                }
             }
         }
     }

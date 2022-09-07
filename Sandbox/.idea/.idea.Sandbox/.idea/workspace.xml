@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fe5a2214-42ee-49c0-aaf5-4b4a1e9b16b4" name="Default Changelist" comment="collision rework WIP">
+    <list default="true" id="fe5a2214-42ee-49c0-aaf5-4b4a1e9b16b4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Sandbox/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sandbox/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tetris/Prefabs/Tetromino Piece.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tetris/Prefabs/Tetromino Piece.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Tetris/Scripts/PlayField.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tetris/Scripts/PlayField.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tetris/Scripts/Sensor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tetris/Scripts/Sensor.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Tetris/Scripts/Tetromino.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tetris/Scripts/Tetromino.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,12 +39,14 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/Window/WindowStencil.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/Stripes.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/BasicLambert.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/PropertiesChallenge3.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/33e9c251baf04a87b97840179f7b0f6f157200/7c/d8b0477f/Transform.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/TwoSide.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/BumpedEnvironment.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/HelloShader.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/33e9c251baf04a87b97840179f7b0f6f157200/89/ee6ae15a/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
@@ -213,10 +214,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="9239">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="14263">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="9239" />
+      <option name="pid" value="14263" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -284,7 +285,8 @@
       <workItem from="1662308655591" duration="1962000" />
       <workItem from="1662410237899" duration="482000" />
       <workItem from="1662451244764" duration="598000" />
-      <workItem from="1662482151655" duration="2221000" />
+      <workItem from="1662482151655" duration="2296000" />
+      <workItem from="1662567684835" duration="1115000" />
     </task>
     <task id="LOCAL-00001" summary="remove old scripts, add CoroutineTestScript.cs">
       <created>1661076413795</created>
@@ -391,7 +393,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662482705566</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="add draw gizmos flag">
+      <created>1662490888432</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1662490888432</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -502,7 +511,8 @@
     <MESSAGE value="fix flaw in movement code" />
     <MESSAGE value="rotation test code WIP" />
     <MESSAGE value="collision rework WIP" />
-    <option name="LAST_COMMIT_MESSAGE" value="collision rework WIP" />
+    <MESSAGE value="add draw gizmos flag" />
+    <option name="LAST_COMMIT_MESSAGE" value="add draw gizmos flag" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -531,29 +541,16 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Tetris/Scripts/Tetromino.cs</url>
-          <line>107</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Tetris/Scripts/Tetromino.cs" initialLine="100" containingFunctionPresentation="method 'MoveDown'">
+          <line>156</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Tetris/Scripts/Tetromino.cs" initialLine="157" containingFunctionPresentation="method 'Rotate'">
             <startOffsets>
-              <option value="3519" />
+              <option value="4970" />
             </startOffsets>
             <endOffsets>
-              <option value="3548" />
+              <option value="5008" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Tetris/Scripts/Tetromino.cs</url>
-          <line>141</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Tetris/Scripts/Tetromino.cs" initialLine="142" containingFunctionPresentation="method 'AnyPieceIsColliding'">
-            <startOffsets>
-              <option value="4616" />
-            </startOffsets>
-            <endOffsets>
-              <option value="4638" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="14" />
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
