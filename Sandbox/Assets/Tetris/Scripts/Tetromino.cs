@@ -12,7 +12,7 @@ namespace Tetris.Scripts
         [SerializeField] private List<TetrominoPiece> _upwardFacingPieces;
         [SerializeField] private List<TetrominoPiece> _leftwardFacingPieces;
         [SerializeField] private List<TetrominoPiece> _rightwardFacingPieces;
-        [SerializeField] private List<TetrominoPiece> _allPieces;
+        [SerializeField] private List<Sensor> _rotationTests;
         
         private Transform _transform;
 
@@ -123,6 +123,7 @@ namespace Tetris.Scripts
             {
                 piecesToTest = _rightwardFacingPieces;
             }
+
             var canMove = AllPiecesCanMoveInDirection(Direction.Down, piecesToTest);
             if (canMove)
             {
@@ -135,28 +136,17 @@ namespace Tetris.Scripts
             return canMove;
         }
 
-        private bool AnyPieceIsColliding()
+        public void Rotate()
         {
-            foreach (var piece in _allPieces)
+            var multiplier = 0;
+            for (var i = 0; i < _rotationTests.Count; i++)
             {
-                if (piece.Colliding())
+                if (!_rotationTests[i].Colliding)
                 {
-                    return true;
+                    multiplier = i + 1;
                 }
             }
-
-            return false;
-        }
-
-        public IEnumerator Rotate()
-        {
-            transform.Rotate(Vector3.forward, 90);
-            yield return new WaitForFixedUpdate();
-            while (AnyPieceIsColliding())
-            {
-                transform.Rotate(Vector3.forward, 90);
-                yield return new WaitForFixedUpdate();
-            }
+            transform.Rotate(Vector3.forward, 90 * multiplier);
         }
     }
 }

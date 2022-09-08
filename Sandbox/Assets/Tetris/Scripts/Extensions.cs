@@ -11,5 +11,10 @@ namespace Tetris.Scripts
             var root = trans.root;
             return $"{root.name}/{AnimationUtility.CalculateTransformPath(trans, root)}";
         }
+        
+        public static bool Contains(this LayerMask mask, int layer)
+        {
+            return mask == (mask | (1 << layer));
+        }
     }
 }

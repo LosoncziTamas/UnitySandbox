@@ -10,8 +10,9 @@ namespace Tetris.Scripts
 
         private readonly List<Collider> _colliders = new();
 
+        [SerializeField] private LayerMask _layerMask;
         [SerializeField] private bool _drawGizmo;
-        
+
         [CanBeNull] private BoxCollider _boxCollider;
 
         private void Awake()
@@ -21,12 +22,15 @@ namespace Tetris.Scripts
 
         private void OnTriggerEnter(Collider other)
         {
-            _colliders.Add(other);
+            if (_layerMask.Contains(other.gameObject.layer))
+            {
+                _colliders.Add(other);
+            }
         }
         
         private void OnTriggerExit(Collider other)
         {
-            if (!_colliders.Remove(other))
+            if (_layerMask.Contains(other.gameObject.layer) && !_colliders.Remove(other))
             {
                 Debug.LogError($"[{this.GetFullPathToObject()}] Collider removal failed.");
             }
@@ -34,12 +38,15 @@ namespace Tetris.Scripts
 
         private void OnCollisionEnter(Collision collision)
         {
-            _colliders.Add(collision.collider);
+            if (_layerMask.Contains(collision.gameObject.layer))
+            {
+                _colliders.Add(collision.collider);
+            }
         }
 
-        private void OnCollisionExit(Collision other)
+        private void OnCollisionExit(Collision collision)
         {
-            if (!_colliders.Remove(other.collider))
+            if (_layerMask.Contains(collision.gameObject.layer) && !_colliders.Remove(collision.collider))
             {
                 Debug.LogError($"[{this.GetFullPathToObject()}] Collider removal failed.");
             }

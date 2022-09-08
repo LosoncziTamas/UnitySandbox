@@ -67,6 +67,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c202f58636b54577bbc991fafc2fbcf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _layerMask:
+    serializedVersion: 2
+    m_Bits: 65
   _drawGizmo: 0
 --- !u!1 &3305148058119621697
 GameObject:
@@ -135,6 +138,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c202f58636b54577bbc991fafc2fbcf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _layerMask:
+    serializedVersion: 2
+    m_Bits: 65
   _drawGizmo: 0
 --- !u!1 &3499677815221897834
 GameObject:
@@ -203,6 +209,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c202f58636b54577bbc991fafc2fbcf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _layerMask:
+    serializedVersion: 2
+    m_Bits: 65
   _drawGizmo: 0
 --- !u!1 &3797938327822311045
 GameObject:
@@ -330,6 +339,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c202f58636b54577bbc991fafc2fbcf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _layerMask:
+    serializedVersion: 2
+    m_Bits: 2147483647
   _drawGizmo: 0
 --- !u!1 &4226712889507361790
 GameObject:
@@ -398,6 +410,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c202f58636b54577bbc991fafc2fbcf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _layerMask:
+    serializedVersion: 2
+    m_Bits: 65
   _drawGizmo: 0
 --- !u!1 &4904169901513008612
 GameObject:

@@ -27,16 +27,6 @@ namespace Tetris.Scripts
             _currentPiece = _tetrominos.SpawnRandom();
         }
         
-        private void UpdateGame()
-        {
-            _accumulator = 0;
-            var pieceGrounded = !_currentPiece.MoveDown();
-            if (pieceGrounded)
-            {
-                _currentPiece = _tetrominos.SpawnRandom();
-            }
-        }
-
         private void Update()
         {
             if (Input.GetKeyDown(KeyCode.LeftArrow))
@@ -49,7 +39,7 @@ namespace Tetris.Scripts
             }
             else if (Input.GetKeyDown(KeyCode.Space))
             {
-                StartCoroutine(_currentPiece.Rotate());
+                _currentPiece.Rotate();
             }
             else if (Input.GetKeyDown(KeyCode.DownArrow))
             {
@@ -63,6 +53,17 @@ namespace Tetris.Scripts
                 {
                     UpdateGame();
                 }
+            }
+        }
+        
+                
+        private void UpdateGame()
+        {
+            _accumulator = 0;
+            var pieceGrounded = !_currentPiece.MoveDown();
+            if (pieceGrounded)
+            {
+                _currentPiece = _tetrominos.SpawnRandom();
             }
         }
     }
