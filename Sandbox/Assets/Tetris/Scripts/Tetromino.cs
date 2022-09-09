@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -129,13 +128,9 @@ namespace Tetris.Scripts
             {
                 _transform.Translate(Vector3.down * _playFieldSettings.MovementSize, Space.World);
             }
-            else
-            {
-                    
-            }
             return canMove;
         }
-
+        
         public void Rotate()
         {
             var multiplier = 0;
