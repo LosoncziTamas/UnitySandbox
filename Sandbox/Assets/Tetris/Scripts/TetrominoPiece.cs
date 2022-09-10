@@ -18,10 +18,5 @@ namespace Tetris.Scripts
                 _ => throw new ArgumentOutOfRangeException(nameof(direction), direction, null)
             };
         }
-
-        public bool Colliding()
-        {
-            return _collisionSensor.Colliding;
-        }
     }
 }

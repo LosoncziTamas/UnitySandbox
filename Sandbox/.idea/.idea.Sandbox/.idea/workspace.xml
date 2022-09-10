@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="fe5a2214-42ee-49c0-aaf5-4b4a1e9b16b4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Sandbox/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sandbox/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tetris/Scripts/Tetromino.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tetris/Scripts/Tetromino.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tetris/Scripts/Sensor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tetris/Scripts/Sensor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tetris/Scripts/TetrominoPiece.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tetris/Scripts/TetrominoPiece.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +44,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/BasicLambert.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/PropertiesChallenge3.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/33e9c251baf04a87b97840179f7b0f6f157200/7c/d8b0477f/Transform.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/tamaslosonczi/Development/Unity3D/UnitySandbox/Sandbox/Assets/Tetris/Scripts/Tetromino.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/tamaslosonczi/Development/Unity3D/UnitySandbox/Sandbox/Assets/Tetris/Scripts/TetrominoPiece.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/TwoSide.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/BumpedEnvironment.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/HelloShader.shader" root0="FORCE_HIGHLIGHTING" />
@@ -55,6 +56,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/Hole.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/PropertiesChallenge2.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/Wall.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/tamaslosonczi/Development/Unity3D/UnitySandbox/Sandbox/Assets/Tetris/Prefabs/Tetromino T.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/StandardSpecPBR.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/VF/FirstUnlit.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/CoroutineTestScript.cs" root0="FORCE_HIGHLIGHTING" />
@@ -286,7 +288,8 @@
       <workItem from="1662482151655" duration="2296000" />
       <workItem from="1662567684835" duration="1177000" />
       <workItem from="1662663696753" duration="3370000" />
-      <workItem from="1662741626416" duration="511000" />
+      <workItem from="1662741626416" duration="684000" />
+      <workItem from="1662818789338" duration="1389000" />
     </task>
     <task id="LOCAL-00001" summary="remove old scripts, add CoroutineTestScript.cs">
       <created>1661076413795</created>
@@ -414,7 +417,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662667063959</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="refactoring">
+      <created>1662742144676</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1662742144676</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -528,7 +538,8 @@
     <MESSAGE value="add draw gizmos flag" />
     <MESSAGE value="restructure update loop" />
     <MESSAGE value="fix rotation issues" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix rotation issues" />
+    <MESSAGE value="refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
