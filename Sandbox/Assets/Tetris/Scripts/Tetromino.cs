@@ -29,7 +29,7 @@ namespace Tetris.Scripts
             _tetrominos.Remove(this);
         }
 
-        private bool AllPiecesCanMoveInDirection(Direction direction, List<TetrominoPiece> piecesToTest)
+        private static bool AllPiecesCanMoveInDirection(Direction direction, List<TetrominoPiece> piecesToTest)
         {
             foreach (var piece in piecesToTest)
             {
