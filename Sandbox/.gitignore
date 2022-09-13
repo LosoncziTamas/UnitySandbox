@@ -71,5 +71,5 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
-Sandbox/.idea/.idea.Sandbox/.idea/workspace.xml
-Sandbox/UserSettings/Layouts/default-2021.dwlt
+/.idea/.idea.Sandbox/.idea/workspace.xml
+/UserSettings/Layouts/default-2021.dwlt
