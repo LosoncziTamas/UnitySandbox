@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 namespace Tetris.Scripts
@@ -25,17 +26,38 @@ namespace Tetris.Scripts
             GUILayout.Space(100);
             if (GUILayout.Button("Clear level"))
             {
-                Clear();
+                StartCoroutine(Clear());
+            }
+        }
+        
+        private IEnumerator ShiftPieces(int startRowIndex)
+        {
+            var bounds = _collider.bounds;
+            var keepShifting = true;
+            for (var rowIndex = startRowIndex; rowIndex < MaxRowCount && keepShifting; ++rowIndex)
+            {
+                var center = bounds.center + rowIndex * ShiftOffset;
+                var overlapCount = Physics.OverlapBoxNonAlloc(center, bounds.extents, _colliders, Quaternion.identity, _tetriminoLayer);
+                keepShifting = overlapCount > 0;
+                for (var i = 0; i < overlapCount; i++)
+                {
+                    var overlappingCollider = _colliders[i];
+                    overlappingCollider.transform.position += Vector3.down;
+                    // TODO: move individual pieces
+                }
+
+                yield return new WaitForSeconds(1.0f);
             }
         }
 
-        private void Clear()
+        private IEnumerator Clear()
         {
             for (var i = 0; i < MaxRowCount; i++)
             {
                 if (CheckRow(i))
                 {
-                    // TODO: move the pieces above
+                    yield return new WaitForSeconds(1.0f);
+                    yield return ShiftPieces(i + 1);
                 }
             }
         }
@@ -46,6 +68,7 @@ namespace Tetris.Scripts
             var center = bounds.center + rowIndex * ShiftOffset;
             var overlapCount = Physics.OverlapBoxNonAlloc(center, bounds.extents, _colliders, Quaternion.identity, _tetriminoLayer);
             var clearRow = overlapCount == PieceCountPerRow;
+            Debug.Log("CheckRow overlapCount " + overlapCount);
             if (clearRow)
             {
                 for (var colliderIndex = 0; colliderIndex < overlapCount; colliderIndex++)
