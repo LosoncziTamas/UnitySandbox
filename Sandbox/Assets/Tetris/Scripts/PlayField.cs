@@ -7,6 +7,7 @@ namespace Tetris.Scripts
     {
         [SerializeField] private PlayFieldSettings _playFieldSettings;
         [SerializeField] private Tetrominos _tetrominos;
+        [SerializeField] private RowCleaner _rowCleaner;
 
         public bool IsUpdating { get; private set; }
 
@@ -18,6 +19,10 @@ namespace Tetris.Scripts
             if (GUILayout.Button("Start Level"))
             {
                 StartLevel();
+            }
+            if (GUILayout.Button("Clear Level"))
+            {
+                _rowCleaner.Clear(0);
             }
         }
 
@@ -56,6 +61,8 @@ namespace Tetris.Scripts
             }
         }
         
+        
+        
                 
         private void UpdateGame()
         {
@@ -64,6 +71,7 @@ namespace Tetris.Scripts
             if (pieceGrounded)
             {
                 _currentPiece = _tetrominos.SpawnRandom();
+                _rowCleaner.Clear(0.0f);
             }
         }
     }
