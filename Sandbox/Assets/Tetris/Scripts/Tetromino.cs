@@ -33,9 +33,10 @@ namespace Tetris.Scripts
         {
             foreach (var piece in piecesToTest)
             {
+                // TODO: fix halfway stucking piece
                 if (!piece.CanMoveInDirection(direction))
-                {
-                    return false;
+                { 
+                     return false;
                 }
             }
             return true;
