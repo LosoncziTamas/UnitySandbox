@@ -36,6 +36,7 @@ namespace Tetris.Scripts
                 // TODO: fix halfway stucking piece
                 if (!piece.CanMoveInDirection(direction))
                 { 
+                    Debug.Break();
                      return false;
                 }
             }

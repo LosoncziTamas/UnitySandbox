@@ -60,10 +60,7 @@ namespace Tetris.Scripts
                 }
             }
         }
-        
-        
-        
-                
+
         private void UpdateGame()
         {
             _accumulator = 0;
