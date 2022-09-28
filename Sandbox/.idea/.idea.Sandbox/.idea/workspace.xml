@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe5a2214-42ee-49c0-aaf5-4b4a1e9b16b4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Tetris/Scripts/RowCleaner.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tetris/Scripts/RowCleaner.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Sandbox/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sandbox/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tetris/Prefabs/Tetromino T.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tetris/Prefabs/Tetromino T.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tetris/Scripts/Tetromino.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tetris/Scripts/Tetromino.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tetris/Tetris Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tetris/Tetris Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,11 +55,13 @@
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/Hole.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/PropertiesChallenge2.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/Wall.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.visualstudio@2.0.14/Editor/ProjectGeneration/ProjectGenerationFlag.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/StandardSpecPBR.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/VF/FirstUnlit.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/CoroutineTestScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/VF/VFMat.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/VF/VFLight.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Tetris/Scripts/RowCleaner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/BasicPhong.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/Hologram.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/StandardPBR.shader" root0="FORCE_HIGHLIGHTING" />
@@ -196,6 +195,7 @@
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="XThreadsFramesViewSplitterKey" value="0.6390658" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/shader_development.md" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -215,10 +215,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="3753">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="3753" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -292,6 +292,8 @@
       <workItem from="1662741626416" duration="684000" />
       <workItem from="1662818789338" duration="2520000" />
       <workItem from="1662922272990" duration="1275000" />
+      <workItem from="1663949539010" duration="923000" />
+      <workItem from="1664381022896" duration="226000" />
     </task>
     <task id="LOCAL-00001" summary="remove old scripts, add CoroutineTestScript.cs">
       <created>1661076413795</created>
@@ -433,7 +435,21 @@
       <option name="project" value="LOCAL" />
       <updated>1662820317109</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="add TODO">
+      <created>1663868781980</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1663868781980</updated>
+    </task>
+    <task id="LOCAL-00022" summary="add debug code">
+      <created>1663949863136</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1663949863136</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -549,7 +565,9 @@
     <MESSAGE value="fix rotation issues" />
     <MESSAGE value="refactoring" />
     <MESSAGE value="fix rotation into other tetromino" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix rotation into other tetromino" />
+    <MESSAGE value="add TODO" />
+    <MESSAGE value="add debug code" />
+    <option name="LAST_COMMIT_MESSAGE" value="add debug code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -577,17 +595,30 @@
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Tetris/Scripts/RowCleaner.cs</url>
-          <line>20</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Tetris/Scripts/RowCleaner.cs" initialLine="19" containingFunctionPresentation="method 'OnGUI'">
+          <url>file://$PROJECT_DIR$/Assets/Tetris/Scripts/Tetromino.cs</url>
+          <line>39</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Tetris/Scripts/Tetromino.cs" initialLine="37" containingFunctionPresentation="method 'AllPiecesCanMoveInDirection'">
             <startOffsets>
-              <option value="661" />
+              <option value="1431" />
             </startOffsets>
             <endOffsets>
-              <option value="704" />
+              <option value="1444" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="8" />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Tetris/Scripts/Tetromino.cs</url>
+          <line>36</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Tetris/Scripts/Tetromino.cs" initialLine="35" containingFunctionPresentation="method 'AllPiecesCanMoveInDirection'">
+            <startOffsets>
+              <option value="1314" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1355" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

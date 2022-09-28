@@ -73,3 +73,7 @@ crashlytics-build.properties
 
 /.idea/.idea.Sandbox/.idea/workspace.xml
 /UserSettings/Layouts/default-2021.dwlt
+
+# Purchased and private stuff
+
+/[Aa]ssets/Private
