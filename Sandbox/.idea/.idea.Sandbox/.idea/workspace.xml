@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fe5a2214-42ee-49c0-aaf5-4b4a1e9b16b4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Sandbox/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sandbox/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
-    </list>
+    <list default="true" id="fe5a2214-42ee-49c0-aaf5-4b4a1e9b16b4" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,6 +59,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Tetris/Scripts/RowCleaner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/BasicPhong.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/Hologram.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/tamaslosonczi/Development/Unity3D/UnitySandbox/Sandbox/UserSettings/EditorUserSettings.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/StandardPBR.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/BumpDiffuse.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/DotProduct.shader" root0="FORCE_HIGHLIGHTING" />
@@ -293,7 +289,7 @@
       <workItem from="1662818789338" duration="2520000" />
       <workItem from="1662922272990" duration="1275000" />
       <workItem from="1663949539010" duration="923000" />
-      <workItem from="1664381022896" duration="226000" />
+      <workItem from="1664381022896" duration="265000" />
     </task>
     <task id="LOCAL-00001" summary="remove old scripts, add CoroutineTestScript.cs">
       <created>1661076413795</created>
@@ -449,7 +445,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663949863136</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="add platformer folder, update .gitignore">
+      <created>1664381280532</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1664381280532</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -567,7 +570,8 @@
     <MESSAGE value="fix rotation into other tetromino" />
     <MESSAGE value="add TODO" />
     <MESSAGE value="add debug code" />
-    <option name="LAST_COMMIT_MESSAGE" value="add debug code" />
+    <MESSAGE value="add platformer folder, update .gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="add platformer folder, update .gitignore" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
