@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Tetriminos
   m_EditorClassIdentifier: 
   _prefabs:
-  - {fileID: 4717280837534064310, guid: 0faf819224ce14849a081bb409b3b8bb, type: 3}
+  - {fileID: 4603306015299259559, guid: 89264cac44acf4ceca888ca14100d800, type: 3}
