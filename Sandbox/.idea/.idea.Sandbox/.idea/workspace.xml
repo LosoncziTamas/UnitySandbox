@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fe5a2214-42ee-49c0-aaf5-4b4a1e9b16b4" name="Default Changelist" comment="" />
+    <list default="true" id="fe5a2214-42ee-49c0-aaf5-4b4a1e9b16b4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Tiles.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Tiles/TileManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Tiles/TileManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Sandbox/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sandbox/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,10 +41,12 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Tiles/Tile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/Window/WindowStencil.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/Stripes.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/BasicLambert.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/PropertiesChallenge3.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3ea01e77be99618395f448b16bd7cc2bd4248bd9e5d8474964b2d97f39c5d74/System.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/33e9c251baf04a87b97840179f7b0f6f157200/7c/d8b0477f/Transform.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/TwoSide.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/BumpedEnvironment.shader" root0="FORCE_HIGHLIGHTING" />
@@ -59,7 +68,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Tetris/Scripts/RowCleaner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/BasicPhong.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/Hologram.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Users/tamaslosonczi/Development/Unity3D/UnitySandbox/Sandbox/UserSettings/EditorUserSettings.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/StandardPBR.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/BumpDiffuse.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/DotProduct.shader" root0="FORCE_HIGHLIGHTING" />
@@ -189,6 +197,8 @@
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="XThreadsFramesViewSplitterKey" value="0.6390658" />
@@ -290,6 +300,11 @@
       <workItem from="1662922272990" duration="1275000" />
       <workItem from="1663949539010" duration="923000" />
       <workItem from="1664381022896" duration="265000" />
+      <workItem from="1664988823395" duration="325000" />
+      <workItem from="1665080189056" duration="1790000" />
+      <workItem from="1665244613899" duration="270000" />
+      <workItem from="1665303806531" duration="629000" />
+      <workItem from="1665344691583" duration="415000" />
     </task>
     <task id="LOCAL-00001" summary="remove old scripts, add CoroutineTestScript.cs">
       <created>1661076413795</created>
@@ -452,7 +467,28 @@
       <option name="project" value="LOCAL" />
       <updated>1664381280532</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="add platformer scene">
+      <created>1664989021360</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1664989021360</updated>
+    </task>
+    <task id="LOCAL-00025" summary="tetris fixes WIP">
+      <created>1665081357926</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1665081357926</updated>
+    </task>
+    <task id="LOCAL-00026" summary="update so file">
+      <created>1665244869864</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1665244869864</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -548,7 +584,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="remove old scripts, add CoroutineTestScript.cs" />
     <MESSAGE value="add CoroutineTest.cs" />
     <MESSAGE value="tetris scratch pad" />
     <MESSAGE value="tweak playfield for tetris game" />
@@ -571,7 +606,10 @@
     <MESSAGE value="add TODO" />
     <MESSAGE value="add debug code" />
     <MESSAGE value="add platformer folder, update .gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="add platformer folder, update .gitignore" />
+    <MESSAGE value="add platformer scene" />
+    <MESSAGE value="tetris fixes WIP" />
+    <MESSAGE value="update so file" />
+    <option name="LAST_COMMIT_MESSAGE" value="update so file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -597,32 +635,6 @@
           <line>963</line>
           <properties documentPath="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/96AE2EFF-98B6-41EB-BFBF-3ABEA9871F75/ef/4e27df9f/Transform.cs" initialLine="963" />
           <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Tetris/Scripts/Tetromino.cs</url>
-          <line>39</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Tetris/Scripts/Tetromino.cs" initialLine="37" containingFunctionPresentation="method 'AllPiecesCanMoveInDirection'">
-            <startOffsets>
-              <option value="1431" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1444" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Tetris/Scripts/Tetromino.cs</url>
-          <line>36</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Tetris/Scripts/Tetromino.cs" initialLine="35" containingFunctionPresentation="method 'AllPiecesCanMoveInDirection'">
-            <startOffsets>
-              <option value="1314" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1355" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
