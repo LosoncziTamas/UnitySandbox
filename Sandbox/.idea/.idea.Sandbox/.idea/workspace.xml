@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe5a2214-42ee-49c0-aaf5-4b4a1e9b16b4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/TileManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/TileManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Tiles/HighlightTile.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Tiles/HighlightTile.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Sandbox/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sandbox/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/BoardSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tiles/BoardSettings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Tile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tiles/Tile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/TileManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tiles/TileManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Tiles.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tiles/Tiles.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -221,10 +223,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="20471">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="20471" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -304,7 +306,9 @@
       <workItem from="1665080189056" duration="1790000" />
       <workItem from="1665244613899" duration="270000" />
       <workItem from="1665303806531" duration="629000" />
-      <workItem from="1665344691583" duration="415000" />
+      <workItem from="1665344691583" duration="1008000" />
+      <workItem from="1665415623324" duration="1927000" />
+      <workItem from="1665502576017" duration="2366000" />
     </task>
     <task id="LOCAL-00001" summary="remove old scripts, add CoroutineTestScript.cs">
       <created>1661076413795</created>
@@ -488,7 +492,21 @@
       <option name="project" value="LOCAL" />
       <updated>1665244869864</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="tile stuff added">
+      <created>1665345303000</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1665345303000</updated>
+    </task>
+    <task id="LOCAL-00028" summary="tile framework WIP">
+      <created>1665417411993</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1665417411993</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -584,8 +602,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="add CoroutineTest.cs" />
-    <MESSAGE value="tetris scratch pad" />
     <MESSAGE value="tweak playfield for tetris game" />
     <MESSAGE value="rotation WIP" />
     <MESSAGE value="remove sensor triggers" />
@@ -609,7 +625,9 @@
     <MESSAGE value="add platformer scene" />
     <MESSAGE value="tetris fixes WIP" />
     <MESSAGE value="update so file" />
-    <option name="LAST_COMMIT_MESSAGE" value="update so file" />
+    <MESSAGE value="tile stuff added" />
+    <MESSAGE value="tile framework WIP" />
+    <option name="LAST_COMMIT_MESSAGE" value="tile framework WIP" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -635,6 +653,32 @@
           <line>963</line>
           <properties documentPath="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/96AE2EFF-98B6-41EB-BFBF-3ABEA9871F75/ef/4e27df9f/Transform.cs" initialLine="963" />
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Tiles/TileManager.cs</url>
+          <line>68</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Tiles/TileManager.cs" initialLine="68" containingFunctionPresentation="method 'GetTile'">
+            <startOffsets>
+              <option value="2711" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2799" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Tiles/HighlightTile.cs</url>
+          <line>19</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Tiles/HighlightTile.cs" initialLine="18" containingFunctionPresentation="method 'OnPointerEnter'">
+            <startOffsets>
+              <option value="612" />
+            </startOffsets>
+            <endOffsets>
+              <option value="654" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

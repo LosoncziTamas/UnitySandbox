@@ -7,13 +7,12 @@ namespace Tiles
     {
         public Vector2Int BoardPosition { get; private set; }
 
-        private TileManager _tileManager;
-        
+        private List<Tile> _adjacentTiles = new();
+
         public void Init(TileManager tileManager, Vector2Int boardPosition)
         {
-            _tileManager = tileManager;
             BoardPosition = boardPosition;
-
+            // _adjacentTiles = tileManager.DetermineAdjacentTiles(boardPosition);
         }
     }
 }
